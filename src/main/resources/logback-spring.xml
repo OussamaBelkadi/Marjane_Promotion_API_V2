@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="jsonFileAppender" class="ch.qos.logback.core.FileAppender">
+        <file>logs/story.json</file>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="jsonFileAppender" />
+    </root>
+</configuration>

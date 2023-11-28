@@ -1,0 +1,10 @@
+package os.merjanepromotion.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import os.merjanepromotion.entity.Produit;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Produit,Long> {
+}
